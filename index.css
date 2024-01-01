@@ -1,0 +1,244 @@
+/* general styling */
+
+body {
+  margin: 0;
+  font-family: 'Smythe', Arial;
+  font-weight: 400;
+  width: 600px;
+  height: 1000px;
+} 
+
+body, 
+h1, 
+h3, 
+p {
+  margin: 0;
+}
+
+h1, h3 {
+  color: #FFFFFF
+}
+
+h1 {
+  padding-left: 47px;
+  padding-top: 46px;
+  font-size: 46px;
+  line-height: 24px;
+}
+
+h3 {
+  padding-left: 47px;
+  padding-top: 20px;
+  font-size: 23px;
+}
+
+/* header */
+
+header {
+  width: 600px;
+  height: 168px;
+  background-image: url(ferks-guare-KEZdWfYD-ow-unsplash-1.png)
+}
+
+/* each menu item container */
+.items-container {
+  width: 508px;
+  margin: auto;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  width: 508px;
+  height: 150px;
+  padding: 20px;
+  /* margin-top: 60px;
+  margin-left: 46px; */
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.item-graphic {
+  font-size: 70px;
+  margin-right: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.item-title,
+.your-order {
+  font-size: 28px; 
+}
+
+.item-description {
+  
+  color: #8B8B8B;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.item-price {
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+.add-to-cart-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1.5px solid #DEDEDE;
+  cursor: pointer;
+  font-size: 32px;
+  color: #3C3C3C;
+  font-weight: 200;
+  background-color: white;
+}
+
+.add-to-cart-btn:active,
+.add-to-cart-btn:focus {
+  outline: none;
+}
+
+/* pre-checkout state */
+.pre-checkout-state-container {
+  display: none;
+  margin: auto;
+  width: 600px;
+  margin-left: 20px
+}
+
+.pre-checkout-state {
+  margin-top: 30px;
+  width: 508px;
+  margin-bottom: 20px;
+  margin: auto; 
+  border-bottom: 1px solid black;
+}
+
+.your-order {
+  text-align: center;
+}
+
+.order-item-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.remove {
+    cursor: pointer;
+    color: #BBBBBB;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.cart-total {
+    width: 508px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.complete-order-btn {
+    width: 508px;
+    margin: auto;
+    display: block;
+}
+
+p .order-item-info-container {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.complete-order-btn {
+    background-color: #16DB99;
+    font-family: Verdana, 'Smythe', Arial;
+    border-radius: 3px;
+    font-weight: 700;
+    box-shadow: 0px 1px 2px #0000000D;
+    border: none;
+    margin: auto;
+    width: 508px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.complete-order-btn:focus {
+    outline: none;
+}
+
+.checkout-payment-module-container {
+    width: 524px;
+    height: 542.25px;
+    border-radius: 3.9px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    box-shadow: 5.186544418334961px 5.186544418334961px 255.43731689453125px 0px #00000080;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+.name-field,
+.card-field,
+.cvv-field {
+    display: inline-block;
+    width: 476px;
+    margin-bottom: 20px;
+    border-radius: 3.9px;
+    height: 71.3px;
+    border: 1.3px solid #757575;
+    padding-left: 20px;
+}
+
+.name-field:focus,
+.card-field:focus,
+.cvv-field:focus {
+    outline: none;
+}
+
+.pay-button {
+    width: 476px;
+    border-radius: 3.9px;
+    height: 71.3px;
+    color: white;
+    background-color: #16DB99;
+    cursor: pointer;
+    border: none;
+    margin-top: 32px;
+}
+
+.checkout-payment-module-container p {
+    margin-bottom: 35px;
+    margin-top: 35px;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.confirmation-page {
+    width: 504px;
+    height: 120px;
+    border-radius: 3px;
+    background-color: #ECFDF5;
+    color: #065F46;
+    font-weight: 400;
+    font-size: 32px;
+    margin: auto;
+    display: none;
+    margin-top: 20px;
+    margin-left: 64px;
+}
+
+.thank-you {
+    text-align: center;
+    padding-top: 40px; 
+}

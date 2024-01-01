@@ -1,0 +1,79 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h3>The best burgers and pizzas in town</h3>
+        </header>
+        <section class="items-container">
+            <div class="item-container">
+                <div class="item-graphic">🍕</div>
+                <div>
+                    <p class="item-title">Pizza</p>
+                    <p class="item-description">pepperoni, mushroom, mozarella</p>
+                    <p class="item-price">$14</p>
+                </div>
+                <div>
+                    <button class="add-to-cart-btn">+</button>
+                </div>
+            </div>
+        </section>
+        <section class="pre-checkout-state-container">
+            <div class="pre-checkout-state">
+                <p class="your-order">Your order</p>
+                <!-- 
+                <div class="order-item-info-container">
+                    <p>Pizza 
+                        <span class="remove">
+                            remove
+                        </span>
+                    </p>
+                    <p>$14</p>
+                </div> -->
+            </div>
+            <div class="cart-total"></div>
+            <button class="complete-order-btn">Complete Order</button>
+        </section>
+        <section class="checkout-payment-module-container">
+            <p>Enter card details</p>
+            <form>
+                <input 
+                type="text" 
+                placeholder="Enter your name" 
+                name="cardholder-name"
+                title="Please enter your full name"
+                class="name-field"
+                required
+                >
+                <input
+                type="tel"
+                placeholder="Enter card number"
+                name="credit-card-number"
+                pattern="[0-9]{16}"
+                title="Please enter a 16-digit credit card number"
+                class="card-field"
+                required
+                >
+                <input 
+                type="tel"
+                placeholder="Enter CVV"
+                name="credit-card-CVV"
+                pattern="[0-9]{3}"
+                title="Please enter a 3-digit CVV"
+                class="cvv-field"
+                required
+                >
+                <button type="submit" class="pay-button">Pay</button>
+            </form>
+        </section>
+        <section class="confirmation-page"></section>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

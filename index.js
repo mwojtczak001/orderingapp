@@ -69,7 +69,8 @@ function addToCart(itemID) {
 preCheckoutState.addEventListener('click', function(e) {
     if (e.target.classList.contains('remove')) {
         const checkoutItem = e.target.closest('.order-item-info-container')
-        const removedItemPrice = parseFloat(checkoutItem.querySelector('p:last-child').textContent.replace('$', ''));
+        const removedItemPrice = parseFloat(checkoutItem.querySelector('p:last-child') 
+            .textContent.replace('$', ''));
         cartTotal -= removedItemPrice
         checkoutItem.remove()
         updateCartDisplay();
@@ -97,7 +98,7 @@ completeOrderBtn.addEventListener('click', function() {
         .style.display = 'block'
 })
 
-document.querySelector('.pay-button').addEventListener('click', function(e) {
+document.querySelector('.form').addEventListener('submit', function(e) {
     e.preventDefault()
     document.querySelector('.checkout-payment-module-container')
         .style.display = 'none'
